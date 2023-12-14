@@ -137,7 +137,7 @@ table {
 /* --------------------------------------------------------------------------------------------------- */
 body {
 
-    background-color: #070707;
+    background-color: #e7ecef;
     width: 100%;
     height: 100dvh;
     display: flex;
@@ -151,7 +151,7 @@ div {
     position: relative;
     width: 400px;
     height: 400px;
-    background-color: orange;
+    background-color: #274c77;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -163,6 +163,26 @@ div::before {
     left: 100px;
     width: 400px;
     height: 400px;
-    background-color: #5C80BC;
+    background-color: #a3cef1;
     transform: rotate(45deg);
+    -webkit-box-shadow: -102px 150px 0px -7px #6096ba;
+    -moz-box-shadow: -102px 150px 0px -7px #6096ba;
+    box-shadow: -102px 150px 0px -7px #6096ba;
+}
+
+@media (max-width:476px) {
+    div {
+        width: 200px;
+        height: 200px;
+    }
+
+    div:before {
+        width: 136px;
+        height: 180px;
+        top: 110px;
+        left: 50px;
+        -webkit-box-shadow: -40px 60px 0px -7px #6096ba;
+        -moz-box-shadow: -40px 60px 0px -7px #6096ba;
+        box-shadow: -40px 60px 0px -7px #6096ba;
+    }
 }
