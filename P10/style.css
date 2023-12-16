@@ -147,18 +147,49 @@ body {
 .ladder_background {
     position: relative;
     width: 300px;
-    height: 500px;
-    background-color: orange;
-    border-radius: 50px 50px 0 0;
+    height: 400px;
+    background-color: #452AEB;
+    border-radius: 150px 150px 0 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .ladder {
     position: absolute;
-    width: 100%;
-    max-width: 60%;
-    height: 20px;
-    background-color: yellow;
+    height: 40px;
+    background-color: black;
+}
+
+.ladder:nth-of-type(1) {
+    margin-top: 150px;
+    width: 50px;
+}
+
+.ladder:nth-of-type(2) {
+    margin-top: 200px;
+    width: 100px;
+}
+
+.ladder:nth-of-type(3) {
+    margin-top: 250px;
+    width: 150px;
+}
+
+.ladder:nth-of-type(4) {
+    margin-top: 300px;
+    width: 200px;
+}
+
+.ladder:nth-of-type(5) {
+    margin-top: 350px;
+    width: 250px;
+}
+
+@media (max-width:370px) {
+    .ladder_background {
+        width: 200px;
+        height: 300px;
+    }
+
 }
