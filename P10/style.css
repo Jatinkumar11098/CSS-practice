@@ -187,48 +187,6 @@ body {
     width: 250px;
 }
 
-.button {
-    position: relative;
-    width: 80px;
-    border: 5px solid orange;
-    margin-top: 100px;
-    background-color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 0px;
-    color: black;
-    font-weight: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-a {
-    overflow: hidden;
-}
-
-a span {
-    position: relative;
-    z-index: 1;
-}
-
-a::before {
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: -90px;
-    width: 90px;
-    height: 80px;
-    border-radius: 10px;
-    background-color: orange;
-    transition: all ease-in 0.2s;
-}
-
-a:hover,
-a:hover:before {
-    left: 0px;
-    width: 90px;
-    filter: drop-shadow(-2px 3px 6px #d31212);
-}
-
 section {
     display: flex;
     flex-direction: column;
